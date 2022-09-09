@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @MrtBlcn
-- 👀 I’m interested Web Devoloping
+- 👀 I’m interested Web Developing
 - 🌱 I’m currently learning HTML, CSS, JAVA
 - 💞️ I’m looking to collaborate on Front end
 - 📫 How to reach me muratbalcin13@gmail.com 
