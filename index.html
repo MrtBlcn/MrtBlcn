@@ -4,96 +4,456 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyFirstWebPage</title>
-    <link rel="stylesheet"href="style.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../BOOSTRAP/CSS/index.css">
+    <title>Murat's Portfolio</title>
+    <style>
+        body
+{
+background-color:#474747;
+color:white;
+}
+.navbar
+{
+background-color:#c0c0c0;
+text-align: center;
+justify-content:center ;
+}
+.btn
+{
+color:white;
+border-color:#28a745;
+}
+.btn:hover
+{
+color: #28a745;
+}
+.text
+{
+margin-top:20vh;
+margin-left:3vw;
+}
+.card-body
+{
+background-color:#808080;
+
+}
+.mh
+{
+margin-left:25vh;
+display: flex;
+
+}
+/* #image
+{
+max-height:90vh;
+padding-left:20vh;
+border-radius:4px;
+display: flex;
+} */
+
+#butn
+{
+margin-left: 34vw;
+}
+#social-media
+{
+    background-color:#313552;
+}
+.media_link
+{
+    padding: 1rem;
+    max-width:15rem;
+    margin-left: 1rem;
+    border: 2px solid #ffc107;
+    border-radius: 0.5rem;
+}
+body
+{
+background-color:#474747;
+color:white;
+}
+.navbar
+{
+background-color:#c0c0c0;
+text-align: center;
+justify-content:center ;
+}
+.btn
+{
+color:white;
+border-color:#28a745;
+}
+.btn:hover
+{
+color: #28a745;
+}
+.text
+{
+margin-top:20vh;
+margin-left:3vw;
+}
+.card-body
+{
+background-color:#808080;
+
+}
+.mh
+{
+margin-left: 10vh;
+
+}
+#image
+{
+
+max-width:60vw;
+max-height:60vh;
+border-radius:4px;
+}
+@media (max-width: 576px){
+#image{
+  width: 30vw;
+  height: 30vh;
+  border-radius: 2px;
+  visibility: hidden;
+
+}
+#zng{
+  width:60vw;
+  height:60vh;
+}
+}
+#butn
+{
+margin-left: 34vw;
+}
+#social-media
+{
+    background-color:#313552;
+}
+.media_link
+{
+    padding: 1rem;
+    max-width:15rem;
+    margin-left: 1rem;
+    border: 2px solid #ffc107;
+    border-radius: 0.5rem;
+}
+.skills{
+    padding: 5rem 0 2.5rem 0;
+}
+.skills > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.skills .row{
+    margin: 1rem 0;
+}
+.skills .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+}
+.skills .item-text span:last-child{
+    position: absolute;
+}
+.skills .item-text .w-90{
+    margin-left: 85%;
+}
+.skills .item-text .w-75{
+    margin-left: 70%;
+}
+.skills .item-text .w-85{
+    margin-left: 80%;
+}
+.skills .item-text .w-80{
+    margin-left: 75%;
+}
+.skills .item-text .w-60{
+    margin-left: 55%;
+}
+.skills .item-text .w-68{
+    margin-left: 63%;
+}
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--nero);
+    overflow: hidden;
+}
+.progress-bar{
+    background: var(--green);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-75{
+    width: 75%;
+}
+.progress-bar.w-85{
+    width: 85%;
+}
+.progress-bar.w-80{
+    width: 80%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}
+.progress-bar.w-68{
+    width: 68%;
+}
+    </style>
 </head>
 <body>
-        <p><strong> Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <!-- navbar -->
+    <div class="navbar sticky-top">
+        <div class="container-fluid">
+         <div class="col-md-6 m-2">
+            <a class="navbar-brand text-light display-1" href="index.html"></a>
+             <h2 class="justify-content-start"><span class="text-success">M</span>urat <span class="text-success">P</span>ortfolio</h2>
+            </div>
+            <div class="col-md-5 m-4">
+              <a href="#"><button class="btn btn-outline ">Skills</button></a>
+               <a href="#"><button class="btn btn-outline ">About</button></a>
+               <a href="#"><button class="btn btn-outline ">Project</button></a>
+               <a href="#"><button class="btn btn-outline ">Media</button></a>
+               <a href="#"><button class="btn btn-outline ">Resume</button></a>
+            </div>
+        </div>
+    </div>
+                            <!-- MAİN-VİEW -->
+<div class="container main-container ">
+<div class="row ">
+    <div class="col-md-5  d-flex">
+        <img id="zng" src="https://www.vectorkhazana.com/assets/images/products/Handsome_Man_Face_Bearded_Joyful_Male_Success_Confident_Adult_Portrait.png">
+    </div>
+       <div class="col-md-5 pl-5">
+        <h3 class="text justify-content-center">Hi I'm</h3>
+        <h1 class="text text-success justify-content-center">Murat Balcin</h1>
+        <h3 class="text justify-content-center">Front-end Devoloper</h3>
+    </div>
+</div>
+</div>
+                <!-- ABOUT AND CARD AND İMAGE -->
+<div class="container-fluid mt-5 ">
+  <div class="row ">
+<div class="mh" class="col-md-5 ml-2  d-flex">
+    <div class="row ">
+<div  class="card text-dark" style="width: 18rem;">
+    <div class="card-body">
+     <a href="#"><h5 class="card-title text-center text-white">About</h5></a>
+      <h6 class="card-subtitle mb-2 text-white">About us</h6>
+      <p class="card-text">Murat Balçın.25 yaşındayım.Neos Yazılım Akademi de Frontend Developer olarak görev almaktayım.Proje olarak Candy Shop e-ticaret sitesi,Fotoğrafçılık sitesi ve casttle wars oyun sitesi yaptım.</p>
+      <a  href="#" class="card-link text-white">About</a>
+      <a href="#" class="card-link text-white">Abot us</a>
+    </div>
+</div>
+  </div>
+  
+  <div class="col-md-5 pl-5 d-flex ">
+    <img class="img-fluid" id="image" src="https://www.kodsihirbazi.com/wp-content/uploads/2018/01/open-position-frontend-developer-dribbble-2-preview-min.png">
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- skills page -->
+<section class = "skills container">
+    <div class = "title">
+      <h2>Skills</h2>
+      <div>
+        <h2>My Skills</h2>
+      </div>
+    </div>
 
-        </p>
-        <p> <em> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a<strong>more-or-less normal </strong> distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</em>
-        </p>
-        <br>
-        <hr>
+    <p class = "text">HTML,CSS3(Librery of BOOSTRAP),javaScript</p>
+
+    <div class = "row ">
+      <div class="col-md-3">
+      <div class = "item">
+        <div class = "item-text">
+          <span>HTML5</span>
+          <span class = "w-90">100%</span>
+        </div>
+        <div class = "progress">
+          <div class = "progress-bar w-100"></div>
+        </div>
+      </div>
+
+      <div class = "item">
+        <div class = "item-text">
+          <span>CSS3</span>
+          <span class = "w-90">90%</span>
+        </div>
+        <div class = "progress">
+          <div class = "progress-bar w-90"></div>
+        </div>
+      </div>
+
+      <div class = "item">
+        <div class = "item-text">
+          <span>Boostrap</span>
+          <span class = "w-90">90%</span>
+        </div>
+        <div class = "progress">
+          <div class = "progress-bar w-90"></div>
+        </div>
+      </div>
         
-        <h1>Murat</h1>
-        <h2>Murat</h2>
-        <h3>Murat</h3>
-        <h4>Murat</h4>
-        <h5>Murat</h5>
-        <h6>Murat</h6>
-        <br>
-        <hr>
+      <div class = "item">
+        <div class = "item-text">
+          <span>javaScript</span>
+          <span class = "w-75">75%</span>
+        </div>
+        <div class = "progress">
+          <div class = "progress-bar w-75"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of skills page -->
+                        <!-- Project head button -->
+    <div class="container mt-5 pl-5 pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <a id="butn" href="#project"><button class="btn btn-outline ">Project</button></a>
 
-<!-- Bu derstte başlık,paragraf,yazı sitillerini öğrendik -->
-
-<ul>
-    <!-- Burada sırasız liste yaptık -->
-<li>Elma</li>
-<li>Armut</li>
-<li>Portakal</li>
-</ul>
-<br>
-<hr>
-<!-- Burada sıralı liste oluşturdum -->
-<ol>
-<li>Ayşe</li>
-<li>Fatma</li>
-<li>Hayriye</li>
-</ol>
-<br>
-<hr>
-<!-- En sevdiğiniz yiyeceklerin sırasız bir alışveriş listesi -->
-<ul>
-<li>Pizza</li>
-<li>Tavuk Dürüm</li>
-<li>Lahmacun</li>
-<li>Musakka</li>
-<li>Pilav</li>
-</ul>
-<br>
-<hr>
-<!-- Bugün yapmanız gereken sıralı bir yapılacaklar listesi -->
-<ol start="15">
-<li>Uyanmak</li>
-<li>Kahhvaltı yapmak</li>
-<li>Diş fırçalamak</li>
-<li>Html derslerine devam etmek</li>
-<li>Örnek projeler yapmak</li>
-<li>Uyumak</li>
-</ol>
-<br>
-<hr>
-<!-- Bir gün ziyaret etmek istediğiniz yerlerin sırasız listesi -->
-<ul>
-<li>Piza Tower</li>
-<li>Eifel Tower</li>
-<li>Stampford Bridge</li>
-<li>Anfield Road</li>
-
-</ul>
-<br>
-<hr>
-<!-- Tüm zamanların en sevdiğiniz 5 video oyununun veya filminizin sıralı bir listesi -->
-<ol>
-<li>RİNGS of THE LORDS</li>
-<li>Harry Potters</li>
-<li>Split</li>
-<li>Koro</li>
-<li>Karayip Korsanları</li>
-</ol>
-<br>
-<hr>
-<!-- not: Turkuazlar attributte lacivertler etiket -->
-<h1>Homepage</h1>
-<a href="https://www.theodinproject.com/about">click me</a>
-<br>
-<hr>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGu1QckM3sNW0dd7DUFbIVNUm6YLuzJAUIYQ&usqp=CAU" alt="köpek">
-<br>
-<hr>
-
-
-
+            </div>
+        </div>
+    </div>
+                    <!-- project and cards -->
+    <div class="container mt-5  pl-5 ">
+        <div class="row">
+            <div class="col-md-4 pb-5">
+                <div class="card " style="width: 18rem;">
+                    <img src="https://www.wordpressintegration.com/common/images/svg-icons/set2/icon24.svg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <p class="card-text">E-Commers Web Site.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 pb-5">
+            <div class="card " style="width: 18rem;">
+                <img src="https://img.freepik.com/premium-vector/headphones-vector-illustration_486879-5.jpg?w=2000" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <p class="card-text">Music Player App.</p>
+                </div>
+            </div>
+              </div>
+        <div class="col-md-4 pb-5">
+        <div class="card " style="width: 18rem;">
+            <img src="https://i.etsystatic.com/19196813/r/il/ab1f73/2583139123/il_fullxfull.2583139123_svt1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">Fitness Web Site.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-5">
+          <div class="card " style="width: 18rem;">
+              <img src="http://oladino.com/wp-content/uploads/2022/08/MR-oladinocom-svg240822b015-2582022102351-1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="card-text">Photography Web Site.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pb-5">
+            <div class="card " style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Feather-communication-message-circle.svg/1200px-Feather-communication-message-circle.svg.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <p class="card-text">Messaging App.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pb-5">
+              <div class="card " style="width: 18rem;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Controller.svg/1200px-Controller.svg.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <p class="card-text">Game App.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+                            <!-- Media head button -->
+    
+                            <!-- media buttons -->
+                            <div id="social-media" class="container-fluid"></div>
+                            <div class="container text-white p-4">
+                              <h4 class="text-warning">Social Media</h4>
+                              <h1 class="m-heading">Let's be Friends</h1>
+                              <div class="row pt-5">
+                                  <div class="col-md-3 media_link btn"href="https://www.linkedin.com/in/murat-bal%C3%A7%C4%B1n-0a6b421bb/">
+                                      <div class="row">
+                                          <div class="col-md-6 d-flex justify-content-start">
+                                              <h3 class="pt-2 m-0 text-white">LinkedIn</h3>
+                      
+                                          </div>
+                                          <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                              <i class="bi bi-linkedin bi-4x text-secondary"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 media_link btn"href="https://github.com/MrtBlcn/MrtBlcn">
+                                      <div class="row">
+                                          <div class="col-md-6 d-flex justify-content-start">
+                                              <h3 class="pt-2 m-0 text-white">Github</h3>
+                      
+                                          </div>
+                                          <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                              <i class="bi bi-github bi-4x text-secondary"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 media_link btn"href="https://www.reddit.com/?gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6GMdIolZKSVx8xMFr-Hk12z0yx6RaYYRziOK6CrQ7rVUmBj2BsK4pxoC1ZoQAvD_BwE">
+                                      <div class="row">
+                                          <div class="col-md-6 d-flex justify-content-start">
+                                              <h3 class="pt-2 m-0 text-white">Reddit</h3>
+                      
+                                          </div>
+                                          <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                              <i class="bi bi-reddit bi-4x text-secondary"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 media_link btn-warning btn"href="https://mail.google.com/mail/u/0/?tab=rm#inbox">
+                                      <div class="row">
+                                          <div class="col-md-6 d-flex justify-content-start">
+                                              <h3 class="pt-2 m-0 text-dark">Email</h3>
+                      
+                                          </div>
+                                          <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                              <i class="bi bi-envelope bi-4x text-secondary"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a id="button"></a>
+<footer>
+    <div id="ftr" class="container text-muted text-center py-3 bt-5">
+       <marquee behavior="" direction="right"> <h5>Copyright &copy;2022 <a href="#">MURAT BALÇIN</a></h5></marquee>
+    </div>
+</footer>
+      
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
