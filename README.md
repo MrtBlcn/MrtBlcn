@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @MrtBlcn
 - 👀 I’m interested Web Developing
-- 🌱 I’m currently learning HTML, CSS, JAVA
-- 💞️ I’m looking to collaborate on Front end
+- 🌱 I’m currently learning HTML, CSS,BOOSTRAP, JAVASCRIPT,PYTHON,DJANGO
+- 💞️ I’m looking to collaborate on Full Stack
 - 📫 How to reach me muratbalcin13@gmail.com 
 
 <!---
